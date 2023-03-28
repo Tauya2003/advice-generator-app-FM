@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1023px) {
+  .card {
+    max-width: 445px;
+  }
+  #divider {
+    content: url("/images/pattern-divider-mobile.svg");
+  }
+}
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 500px;
+  }
+  #divider {
+    content: url("/images/pattern-divider-desktop.svg");
+  }
+}
+body {
+  background-color: hsl(218, 23%, 16%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.card {
+  background-color: hsl(217, 19%, 24%);
+  margin: 1.25rem;
+  border-radius: 1rem;
+  padding: 0.65rem;
+  text-align: center;
+  position: relative;
+}
+.card__header {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  padding: 1.75rem 0;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.25rem;
+}
+.card .advice__text {
+  font-size: 1.5rem;
+  color: hsl(193, 38%, 86%);
+  font-weight: 800;
+}
+.card .divider_container {
+  margin: 1.5rem 0;
+}
+.card .dice {
+  background-color: hsl(150, 100%, 66%);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.card .dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2rem hsl(150, 100%, 66%);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$light-Cyan: hsl(193, 38%, 86%);
+$neon-Green: hsl(150, 100%, 66%);
+$grayish-Blue: hsl(217, 19%, 38%);
+$dark-Grayish-Blue: hsl(217, 19%, 24%);
+$dark-Blue: hsl(218, 23%, 16%);
+
+@mixin small {
+    @media screen and (max-width: 1023px) {
+        @content;
+    }
+};
+
+@mixin large {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}

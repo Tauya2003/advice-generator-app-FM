@@ -1,0 +1,17 @@
+@include small{
+    .card{
+        max-width: 445px;
+    }
+    #divider{
+        content: url("/images/pattern-divider-mobile.svg");
+    }
+};
+
+@include large{
+    .card{
+        max-width: 500px;
+    }
+    #divider{
+        content: url("/images/pattern-divider-desktop.svg");
+    }
+};
